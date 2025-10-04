@@ -1,0 +1,17 @@
+name: IITM DS CI Workflow
+
+on: [push]  # Triggers on any push to the repo
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # Use GitHub's free hosted runner
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4  # Checks out your code
+
+      - name: Run test step by 23f3000531@ds.study.iitm.ac.in
+        run: echo "Hello from IITM DS student! Workflow triggered successfully."
+
+      - name: List files (optional demo step)
+        run: ls -la
+ #"Add initial GitHub Actions workflow for IITM assignment".
